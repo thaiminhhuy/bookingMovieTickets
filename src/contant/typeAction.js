@@ -1,0 +1,23 @@
+export const getListMovie = "getListMovie";
+export const getListCluster = "getListCluster";
+export const getListAddress = "getListAddress";
+export const getListAddressNoActive = "getListAddressNoActive";
+export const getMovie = "getMovie";
+export const getMovieNoActive = "getMovieNoActive";
+export const getShowTimesFilm = "getShowTimesFilm";
+export const getDetailMovie = "getDetailMovie";
+export const getTicketRoom = "getTicketRoom";
+export const setActiveForThearSystem = "setActiveForThearSystem";
+export const sendListCluster = "sendListCluster";
+export const sendAddressListCluster = "sendAddressListCluster";
+export const sendTheaterSystemCode = "sendTheaterSystemCode";
+export const loginHome = "loginHome";
+export const checkAccountLogout = "checkAccountLogout";
+export const checkLogoutLoginAndBuyTickets = "checkLogoutLoginAndBuyTickets";
+export const checkLogoutLoginAndBuyTicketsForLogin =
+  "checkLogoutLoginAndBuyTicketsForLogin";
+export const sendValueLoadMore = "sendValueLoadMore";
+export const getListClusterForMobile = "getListClusterForMobile";
+export const sendValueCheck = "sendValueCheck";
+export const setValueLoadingTrue = "setValueLoadingTrue";
+export const setValueLoadingFalse = "setValueLoadingFalse";

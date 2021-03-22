@@ -1,0 +1,80 @@
+.cinemasystem-mobile .cluster-mobile img {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+.cinemasystem-mobile .cluster-mobile span {
+  line-height: 40px;
+  padding: 5px;
+  margin-left: 5px;
+  border-left: 1px solid #ebebec;
+}
+.cinemasystem-mobile .cluster-mobile {
+  padding: 5px;
+  border: 1px solid #ebebec;
+  display: flex;
+  cursor: pointer;
+}
+
+.system-cinema-mobile .system-cinema-item img {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.system-cinema-mobile .system-cinema-item span {
+  line-height: 40px;
+  padding: 5px;
+  margin-left: 5px;
+  border-left: 1px solid #ebebec;
+}
+.system-cinema-mobile .system-cinema-item {
+  padding: 5px;
+  border: 1px solid #ebebec;
+  display: flex;
+  cursor: pointer;
+}
+/*film  */
+
+.film-mobile .img-film img {
+  max-width: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.film-mobile span {
+  line-height: 40px;
+  padding: 5px;
+  margin-left: 5px;
+  border-left: 1px solid #ebebec;
+}
+.film-mobile {
+  padding: 5px;
+  border: 1px solid #ebebec;
+  display: flex;
+  cursor: pointer;
+}
+
+.date-time-mobile {
+  border-radius: 15px;
+  cursor: pointer;
+  background: #fecf06a6;
+  margin-bottom: 5px;
+  color: white;
+}
+.hour-for-mobile {
+  color: green;
+  background: #e7dddd52;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.cinemasystem-mobile {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .cinemasystem-mobile {
+    display: block;
+  }
+}

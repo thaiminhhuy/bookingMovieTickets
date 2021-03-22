@@ -1,0 +1,25 @@
+.carousel-item {
+  height: calc(100vh - 76px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel-introduce {
+  top: 76px;
+}
+.carousel-indicators {
+  bottom: 35px !important;
+}
+.carousel-indicators li {
+  height: 0 !important;
+  width: 12px !important;
+  border-radius: 50%;
+  border-top: 7px solid transparent !important;
+  border-bottom: 5px solid transparent !important;
+  background-clip: unset !important;
+}
+@media screen and (min-width: 1025px) {
+  .carousel-item {
+    background-position: unset;
+  }
+}

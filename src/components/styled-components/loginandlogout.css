@@ -1,0 +1,129 @@
+.style-modal {
+  padding: 0 !important;
+}
+.design-form-login-logout .modal-content {
+  border: none !important;
+}
+.design-form-login-logout {
+  transform: translate(-50%, -50%) !important;
+  position: absolute;
+  top: 50% !important;
+  left: 50%;
+  width: 300px;
+  text-align: center;
+  margin: 0 !important;
+}
+
+.box {
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919e0;
+  text-align: center;
+}
+.box h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+}
+.box input[type="text"],
+.box input[type="password"],
+.box input[type="email"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 5px 10px;
+  outline: none;
+  color: white;
+  border-radius: 37px;
+  transition: 0.25s;
+  width: 200px;
+}
+.box input[type="text"]:focus,
+.box input[type="password"]:focus,
+.box input[type="email"]:focus {
+  border-color: #2ecc71;
+}
+
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 5px 40px;
+  outline: none;
+  color: white;
+  border-radius: 37px;
+  transition: 0.25s;
+}
+.nextRegister {
+  color: white;
+  text-align: right;
+}
+.nextRegister button {
+  background: none;
+  border: none;
+}
+/*register*/
+.box-register input[type="text"],
+.box-register input[type="password"],
+.box-register input[type="email"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 3px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 5px 10px;
+  outline: none;
+  color: white;
+  border-radius: 37px;
+  transition: 0.25s;
+  width: 200px;
+}
+
+.box-register input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 5px 40px;
+  outline: none;
+  color: white;
+  border-radius: 37px;
+  transition: 0.25s;
+}
+
+.box-register input[type="text"]:focus,
+.box-register input[type="password"]:focus,
+.box-register input[type="email"]:focus {
+  border-color: #2ecc71;
+}
+
+.box-register {
+  width: 300px;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #191919e0;
+  text-align: center;
+}
+.box-register h1 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 25px;
+}

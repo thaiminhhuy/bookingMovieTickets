@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+#header-admin {
+  position: fixed;
+  background: #22242a;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.left-area {
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.left-area span {
+  color: #1dc4e7;
+}
+.right-area p {
+  padding: 5px;
+  background: #19b3d3;
+  float: right;
+  margin-top: -40px;
+  margin-right: 40px;
+  font-size: 15px;
+  border-radius: 2px;
+  color: #fff;
+  transition: 0.5s;
+  transition-property: background;
+}
+.right-area p:hover {
+  background: #0d9dbb;
+}
+.admin-sidebar {
+  background: #2f323a;
+  margin-top: 110px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  transition-property: left;
+  transition: 0.5s;
+}
+
+.admin-sidebar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.admin-sidebar h4 {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.admin-sidebar ul li {
+  color: #fff;
+
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition-property: background;
+  transition: 0.5s;
+  list-style: none;
+}
+.admin-sidebar ul li:hover {
+  background: #19b3d3;
+  cursor: pointer;
+}
+.admin-sidebar ul .active {
+  background: #19b3d3;
+}
+.admin-sidebar i {
+  padding-right: 10px;
+}
+label #sidebar-btn {
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  left: 300px;
+  font-size: 20px;
+  margin: 20px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+label #sidebar-btn:hover {
+  color: #19b3d3;
+}
+#check:checked ~ .admin-sidebar {
+  left: -190px;
+}
+#check:checked ~ .admin-sidebar li span {
+  display: none;
+}
+#check:checked ~ .admin-sidebar li {
+  font-size: 20px;
+  margin-left: 170px;
+  width: auto;
+  transition: 0.5s;
+}
+.content-wrapper {
+  margin-left: 250px;
+  position: absolute;
+  margin-top: 113px;
+  transition: 0.5s;
+  width: calc(100% - 250px);
+}
+
+#check:checked ~ .content-wrapper {
+  margin-left: 60px;
+  width: calc(100% - 60px);
+}
+
+#check {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #sidebar-btn {
+    display: none;
+  }
+  .content-wrapper {
+    margin-left: 60px;
+    position: absolute;
+    margin-top: 115px;
+  }
+  .admin-sidebar {
+    left: -190px;
+  }
+  .admin-sidebar li {
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px !important;
+  }
+  .admin-sidebar i {
+    padding-right: 30%;
+  }
+  .admin-sidebar li span {
+    display: none;
+  }
+}

@@ -1,0 +1,96 @@
+.searchmovie .toolsearchmovie {
+  display: flex;
+  max-width: 940px;
+  margin: auto;
+  height: 80px;
+  bottom: 0;
+  width: 100%;
+  padding: 0px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  font-weight: 400;
+}
+.searchmovie .dropdown {
+  padding: 0 !important;
+  cursor: pointer;
+}
+
+.searchmovie .selectMenu {
+  position: absolute;
+  width: 100%;
+  top: 18%;
+  padding: 15px;
+  background-image: url("../../img-icons/icondropdown.png");
+  background-repeat: no-repeat;
+  background-position: calc(98% - 8px);
+  border-right: 1px solid rgba(238, 238, 238, 0.88) !important;
+  overflow-x: hidden !important;
+  text-overflow: ellipsis;
+}
+.selectMenu::after {
+  display: none !important;
+}
+.searchmovie .selectMovie {
+  position: absolute;
+  top: 60px !important;
+  width: 350px;
+  padding: 0px;
+  text-indent: 14px;
+  line-height: 27px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border-radius: 5px;
+  max-height: 300px !important;
+  overflow-y: scroll !important;
+  transform: none !important;
+}
+.selectMovie .dropdown-item:hover {
+  transition: all 0.3s;
+  color: #fff;
+  background: orange;
+}
+.buyticket {
+  padding: 0 !important;
+  text-align: center;
+  line-height: 75px !important;
+}
+.buyticket a {
+  color: rgba(0, 0, 0, 0.87) !important;
+}
+.buyticket a:hover {
+  text-decoration: none !important;
+}
+
+.selectscroll::-webkit-scrollbar {
+  width: 4px;
+  background-color: #e3e7e8;
+  opacity: 1;
+}
+.selectscroll::-webkit-scrollbar-thumb {
+  box-shadow: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.selectMenu span {
+  width: 110px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/*add css */
+.searchmovie {
+  padding-top: 35px;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (max-width: 767px) {
+  .searchmovie {
+    display: none;
+  }
+  .show-slider-listmovie {
+    margin-top: 100px;
+  }
+}

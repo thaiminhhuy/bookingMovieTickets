@@ -1,0 +1,116 @@
+// let userAdmin = JSON.parse(localStorage.getItem("accountAdmin"));
+
+    // newData.maPhim = parseInt(newData.maPhim);
+    // newData.danhGia = parseInt(newData.danhGia);
+
+    // newData.ngayKhoiChieu = new Date(newData.ngayKhoiChieu);
+    // let month = newData.ngayKhoiChieu.getMonth() + 1;
+    // let day = newData.ngayKhoiChieu.getDate();
+    // let year = newData.ngayKhoiChieu.getFullYear();
+    // let d = `0${day}`.slice(-2);
+    // let m = `0${month}`.slice(-2);
+    // let ddyymm = d + "/" + m + "/" + year;
+    // newData.ngayKhoiChieu = ddyymm;
+
+    // console.log(newData.ngayKhoiChieu);
+
+    // let formData = new FormData();
+    // for (let key in newData) {
+    //   formData.append(key, newData[key]);
+    // }
+    // console.log("hinhanh", formData.get("hinhAnh"));
+
+    // // console.log(newData.ngayKhoiChieu);
+    // console.log(formData);
+
+    // Axios({
+    //   method: "POST",
+    //   url: "http://movie0706.cybersoft.edu.vn/api/QuanLyPhim/CapNhatPhimUpload",
+    //   // url: " http://movie0706.cybersoft.edu.vn/api/QuanLyPhim/CapNhatPhim",
+    //   data: formData,
+    //   headers: {
+    //     Authorization: `Bearer ${userAdmin.accessToken}`,
+    //   },
+    // })
+    //   .then((rs) => {
+    //     swal("Thành Công!", "", "success");
+    //     return rs.data;
+    //   })
+    //   .then((rsData1) => {
+    //     // console.log(rsData1);
+    //     // console.log("hinhanh", formData.get("hinhAnh").name);
+    //     rsData1 = { ...rsData1, hinhAnh: formData.get("hinhAnh").name };
+    //     const dataUpdate = [...data];
+    //     const index = oldData.tableData.id;
+    //     console.log(rsData1);
+
+    //     dataUpdate[index] = rsData1;
+    //     setData([...dataUpdate]);
+    //   })
+    //   .catch((err) => {
+    //     // swal(" Tài Khoản Đã Tồn Tại!", "", "warning");
+    //     console.log(err.response);
+    //   });
+
+
+
+
+
+
+
+
+     let userAdmin = JSON.parse(localStorage.getItem("accountAdmin"));
+
+    newData.maPhim = parseInt(newData.maPhim);
+    newData.danhGia = parseInt(newData.danhGia);
+
+    newData.ngayKhoiChieu = new Date(newData.ngayKhoiChieu);
+    let month = newData.ngayKhoiChieu.getMonth() + 1;
+    let day = newData.ngayKhoiChieu.getDate();
+    let year = newData.ngayKhoiChieu.getFullYear();
+    let d = `0${day}`.slice(-2);
+    let m = `0${month}`.slice(-2);
+    let ddyymm = d + "/" + m + "/" + year;
+    newData.ngayKhoiChieu = ddyymm;
+    var frm = new FormData();
+    frm.append("hinhAnh", newData.hinhAnh[0]);
+    frm.append("tenphim", newData.tenphim);
+    frm.append("manhom", "GP05");
+    console.log(newData.hinhAnh);
+    Axios({
+      method: "POST",
+      url: "http://movie0706.cybersoft.edu.vn/api/QuanLyPhim/UploadHinhAnhPhim",
+      data: frm,
+    })
+      .then((rs) => {
+        console.log(rs);
+        swal("Thành Công!", "", "success");
+      })
+      .catch((err) => {
+        console.log(err.response);
+      });
+    // Axios({
+    //   method: "POST",
+
+    //   url: " http://movie0706.cybersoft.edu.vn/api/QuanLyPhim/CapNhatPhim",
+    //   data: newData,
+    //   headers: {
+    //     Authorization: `Bearer ${userAdmin.accessToken}`,
+    //   },
+    // })
+    //   .then((rs) => {
+
+    //     swal("Thành Công!", "", "success");
+    //     //  return rs.data;
+    //   })
+    //   // .then((rsData1) => {
+    //   //   const dataUpdate = [...data];
+    //   //   const index = oldData.tableData.id;
+    //   //   console.log(rsData1);
+
+    //   //   dataUpdate[index] = rsData1;
+    //   //   setData([...dataUpdate]);
+    //   // })
+    //   .catch((err) => {
+    //     console.log(err.response);
+    //   });

@@ -1,0 +1,160 @@
+header {
+  z-index: 999999 !important;
+  box-sizing: border-box !important;
+  position: fixed;
+  width: 100vw;
+}
+
+header .navbar-brand {
+  width: 40%;
+}
+header .navbar-brand img {
+  width: 50px;
+}
+header .collapse {
+  display: flex !important;
+  justify-content: space-around;
+}
+header .collapse .nav-link {
+  transition: 0.5s;
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+header .collapse .nav-link:hover {
+  color: orange !important;
+}
+header .account {
+  display: flex !important;
+  align-items: center;
+}
+header .account:hover {
+  cursor: pointer !important;
+}
+header .account img {
+  height: auto;
+  max-width: 50px;
+  border-radius: 25px;
+  margin-right: 5px;
+  width: 100%;
+}
+header .account p {
+  line-height: 30px;
+  color: #9b9b9b !important;
+  margin: inherit;
+  font-size: 13px;
+}
+header .account button {
+  display: flex;
+}
+header .account a:hover {
+  text-decoration: none;
+}
+
+.navbarMobile {
+  display: none !important;
+}
+.width-account-200px {
+  width: 200px;
+}
+.navbar-toggler {
+  display: none !important;
+}
+@media screen and (min-width: 1200px) {
+  .width-account-200px {
+    width: 250px;
+  }
+  header .navbar-brand {
+    width: 40% !important;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .width-account-200px {
+    width: 230px;
+  }
+  header .navbar-brand {
+    width: 35% !important;
+  }
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto !important;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+header .collapse {
+  display: none !important;
+}
+#header .black {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+#header .black p {
+  color: #000 !important;
+}
+@media screen and (max-width: 768px) {
+  .navbarMobile {
+    display: block !important;
+  }
+  header .navbar-toggler {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 9;
+    transition: all 0.1s;
+    display: block !important;
+  }
+
+  header .listMenuMobile {
+    background-color: #f8f9faf0;
+    position: absolute;
+    width: 50%;
+    right: -100%;
+    text-align: center;
+    transition: all 0.6s;
+    height: 100vh;
+  }
+  header .listMenuMobile .navbar-nav {
+    line-height: 60px;
+  }
+  header .listMenuMobile .navbar-nav .nav-link {
+    color: #000 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+  header .listMenuMobile .account {
+    background-color: #6565652e;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  header .show {
+    transition: all 0.3s;
+    display: block !important;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .listMenuMobile .account {
+    padding: 15px !important;
+    display: inline !important;
+    background: none !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .listMenuMobile .account {
+    padding: 0 !important;
+  }
+}
+/* @media screen and (max-width: 320px) {
+  .listMenuMobile .account {
+    display: inline !important;
+    background: none !important;
+  }
+} */
